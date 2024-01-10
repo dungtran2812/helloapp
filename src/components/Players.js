@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { PlayersData } from "../shared/ListOfPlayers";
-export default class Players extends Component{
-     render() {
+export default function Players() {
+     
     //     return (
     //         <div className="container">
     //             <div className="column">
@@ -71,5 +71,5 @@ export default class Players extends Component{
         </div>
         
     )
-}
+
 }
