@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import { PlayersData } from "../shared/ListOfPlayers";
+import { useState } from "react";
 export default function Players() {
-     
+            
     //     return (
     //         <div className="container">
     //             <div className="column">
