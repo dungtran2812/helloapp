@@ -9,7 +9,7 @@ import { FilmContainer } from './components/FilmContainer';
 function App() {
   return (
     <div className='app'>
-      <Header/>
+      
       <Navigation/>
       <Main/>
       <FilmContainer/>

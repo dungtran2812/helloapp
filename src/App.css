@@ -1,6 +1,10 @@
 nav {
   background-color: #333;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 ul {
@@ -35,12 +39,15 @@ li a:hover {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Adjust the spacing between columns */
+  justify-content: space-around;
+  /* Adjust the spacing between columns */
 }
 
 .column {
-  flex: 0 0 30%; /* Adjust the width of each column */
-  margin: 10px; /* Adjust the margin between columns */
+  flex: 0 0 30%;
+  /* Adjust the width of each column */
+  margin: 10px;
+  /* Adjust the margin between columns */
 }
 
 .card {
@@ -98,12 +105,14 @@ button {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
-  }
-  .overlay:target {
+}
+
+.overlay:target {
   visibility: visible;
   opacity: 1;
-  }
-  .popup {
+}
+
+.popup {
   margin: 70px auto;
   padding: 5px;
   background: #fff;
@@ -111,14 +120,19 @@ button {
   width: 30%;
   position: relative;
   transition: all 5s ease-in-out;
-  }
-  .popup img{ width: 100%;}
-  .popup h2 {
+}
+
+.popup img {
+  width: 100%;
+}
+
+.popup h2 {
   margin-top: 0;
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
-  }
-  .popup .close {
+}
+
+.popup .close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -127,12 +141,17 @@ button {
   font-weight: bold;
   text-decoration: none;
   color: #333;
-  }
-  .popup .close:hover {color: #06D85F;}
-  .popup .content {
+}
+
+.popup .close:hover {
+  color: #06D85F;
+}
+
+.popup .content {
   max-height: 30%;
   overflow: auto;
-  }
+}
 
-
-
+.switch-mode {
+  
+}
