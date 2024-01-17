@@ -152,6 +152,34 @@ button {
   overflow: auto;
 }
 
-.switch-mode {
-  
+.badge {
+  background-color: #3498db;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.product-tumb img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-details h4 {
+  margin: 0;
+  color: #333;
+}
+
+.product-price {
+  font-size: 1.2em;
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+.product-details p {
+  color: #555;
+  margin-top: 10px;
 }

@@ -1,18 +1,22 @@
 
 import './App.css';
-import Header from './components/Header';
+import { Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
-import { Main } from './components/Main';
-import { FilmContainer } from './components/FilmContainer';
+import Players from './components/Players';
+import Detail from './components/Detail';
+import Contact from './components/Contact';
 
 function App() {
   return (
     <div className='app'>
       
       <Navigation/>
-      <Main/>
-      <FilmContainer/>
+          <Routes>
+            <Route path='/' element={<Players />}></Route>
+            <Route path='/detail/:id' element={<Detail/>}></Route>
+            <Route path='/contact' element={<Contact/>}></Route>
+          </Routes>  
       <Footer/>
     </div>
   )

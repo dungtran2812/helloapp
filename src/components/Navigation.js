@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { useContext } from "react"
 import { ThemeContext, ThemeProvider } from "./ThemeContext"
+import { Link } from "react-router-dom"
 export default function Navigation() {  
     const { theme, toggle, dark} = useContext(ThemeContext)
     
@@ -8,7 +9,8 @@ export default function Navigation() {
             <div>
                 <nav style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
                     <ul >
-                        <li><a className="active" href="#home" style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>Home</a></li>
+                        <Link to="/"><li><a className="active" href="#home" style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>Home</a></li></Link>
+                        
                         <li><a href="#news" style={{ backgroundColor: theme.backgroundColor, color: theme.color }} >News</a></li>
                         <li><a href="#about" style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>About</a></li>
                         <li><a href="#contact" style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>Contact</a></li>
