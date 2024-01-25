@@ -15,10 +15,8 @@ function App() {
       
       <Navigation/>
           <Routes>
-            <Route path='/' element={<Players />}></Route>
-            
-            <Route path='/detail/:id' element={<Detail/>}></Route>
-            
+            <Route path='/' element={<Players />}></Route>      
+            <Route path='/detail/:id' element={<Detail/>}></Route>        
             <Route path='/contact' element={<Contact/>}></Route>
             <Route path='/about' element={<About/>}></Route>
           </Routes> 
