@@ -1,15 +1,15 @@
-import { Link, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import { playerData } from "../shared/ListOfPlayers";
-import LiveTvIcon from '@mui/icons-material/LiveTv';
+
 import React from 'react'
-import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
+import {  Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import Popup from "./Popup";
 export default function Detail() {
     const userName = useParams();
     const player = playerData.find(obj => {
         return obj.id === userName.id;
     });
-    let cost = player.cost.toLocaleString();
+    
     return (
         <Card sx={{ maxWidth: 1200, margin: 5 }}>
             <CardMedia
