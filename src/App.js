@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Players from './components/Players';
 import Detail from './components/Detail';
 import Contact from './components/Contact';
-import ToggleButton from './components/ToggleButton';
+
 import About from './components/About';
 
 function App() {

@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import { Link } from 'react-router-dom';
-import { Home } from '@mui/icons-material';
+
 import { ToggleButton } from './ToggleButton';
 
 const pages = ['Home', 'News', 'Contact', 'About'];
